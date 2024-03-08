@@ -1,5 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-{%- assign categories = pages['product-categories'].metafields.custom.product_categories.value -%}
+{%- assign product_categories = pages['product-categories'].metafields.custom.product_categories.value -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -45,15 +45,15 @@
 
 <div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="multirow__inner page-width">
-    <div>
-      <p>Test stuff</p>
-      <p>{{ categories }} whoops</p>
-    </div>
-    {% for category in categories %}
+    {% for category in product_categories %}
       <div>
-        <p>This is a test block</p>
         <p>{{ category.title }}</p>
       </div>
+      {% for subcategory in category.subcategories.value %}
+        <div class="tw-p-8">
+          <p>{{ subcategory.title }}</p>
+        </div>
+      {% endfor %}
     {% endfor %}
     {%- for block in section.blocks -%}
       <div class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>

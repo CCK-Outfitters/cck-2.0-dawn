@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "tw": "npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch",
-    "run": "shopify theme dev --store=https://cck-2-0-dawn.myshopify.com/"
+    "dev": "shopify theme dev --store=https://cck-2-0-dawn.myshopify.com/"
   },
   "repository": {
     "type": "git",

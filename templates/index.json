@@ -56,6 +56,24 @@
         "show_text_below": true
       }
     },
+    "174008893036c1859d": {
+      "type": "apps",
+      "blocks": {
+        "cck_app_star_rating_r8rpxT": {
+          "type": "shopify://apps/cck-app/blocks/star_rating/664ce178-7ab8-44ea-b0b9-fe09e0f4f397",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "cck_app_star_rating_r8rpxT"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "cck_product_categories_84GhMJ": {
       "type": "cck-product-categories",
       "blocks": {
@@ -134,29 +152,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "174008893036c1859d": {
-      "type": "apps",
-      "blocks": {
-        "cck_app_star_rating_r8rpxT": {
-          "type": "shopify://apps/cck-app/blocks/star_rating/664ce178-7ab8-44ea-b0b9-fe09e0f4f397",
-          "settings": {
-            "product": "",
-            "colour": "#ff0000"
-          }
-        }
-      },
-      "block_order": [
-        "cck_app_star_rating_r8rpxT"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
-    "174008893036c1859d",
     "image_banner",
+    "174008893036c1859d",
     "cck_product_categories_84GhMJ",
     "featured_collection",
     "featured_blog_hnqbLH"

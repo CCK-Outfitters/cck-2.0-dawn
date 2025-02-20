@@ -229,10 +229,10 @@
         "padding_bottom": 28
       }
     },
-    "1740088636344dac66": {
+    "174008887113430cb2": {
       "type": "apps",
       "blocks": {
-        "cck_app_star_rating_CMyBW8": {
+        "cck_app_star_rating_DeQ3yY": {
           "type": "shopify://apps/cck-app/blocks/star_rating/664ce178-7ab8-44ea-b0b9-fe09e0f4f397",
           "settings": {
             "product": "{{product}}",
@@ -241,7 +241,7 @@
         }
       },
       "block_order": [
-        "cck_app_star_rating_CMyBW8"
+        "cck_app_star_rating_DeQ3yY"
       ],
       "settings": {
         "include_margins": true
@@ -249,7 +249,7 @@
     }
   },
   "order": [
-    "1740088636344dac66",
+    "174008887113430cb2",
     "main",
     "image-with-text",
     "multicolumn",
